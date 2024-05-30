@@ -19,3 +19,24 @@ For Microsoft to better understand the film Industry, they need to answer these 
 The data used in this project is from two sources:
 **Data\bom.movie_gross.csv - This is a csv file which mainly contains information on Movie titles, the year the movies were released, the studio that created the Movie and also gross earnings made from movies both domestically and foreign.**
 **Data\tn.movie_budgets.csv - This is also a csv file similar to the one above only that it has additional information on the movie production budget and the worldwide earnings of the Movies**
+
+### Data Analysis
+In this file Data\bom.movie_gross.csv,
+
+```python
+df.groupby(["studio", "year"])["domestic_gross"].sum()
+``` 
+**Here we will group our dataset by Studio that produce the movie, the year the movie was produced and the domestic gains for that year.**
+
+While in Data\tn.movie_budgets.csv file as part of my analysis, I found the gross earnings the found the correlation with production Budget;
+
+```python
+budgets['Total_gross'] = budgets['domestic_gross'] + budgets['worldwide_gross']
+budgets['Total_gross'].head()
+```
+```python
+correlation = budgets[['production_budget', 'Total_gross']].corr()
+correlation
+```
+
+***From the correlation analysis, i found that Production budget and Total gross have a correlation of 0.739912 indicating a strong positive correlation. Movies with higher production budgets tend to have higher total gross incomes and vice versa.*** 
