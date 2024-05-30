@@ -100,3 +100,19 @@ plt.show()
 
 This barplot shows the domestic earnings from the top_5_movies on the Box office.
 
+## Conclusion
+### Findings based on genre
+##### From the top_5_movies based on World wide earnings, Microsoft should create Science Fiction Movies as they are the highest earners.Of the top_5_movies from the bar graphs above, it is only Titanic that isn't a Science Fiction film the rest are SciFi movies.Below is a breakdown of the genres of the top_5_movies in terms of their Worldwide earnings at the Box Office:
+- **Avatar - Science Fiction**
+- **Titanic - Romance, Disaster, Historical Drama**
+- **Star wars Ep.7: The Force Awakens - Science, Action,Fantasy**
+- **Avengers: Infinity War - Science Fiction, Action, Drama**
+- **Jurassic World - Science Fiction, Action, Adventure**
+
+##### The other most recommendable genre that Microsoft should produce is Action movies as they are also doing well at the Box Office.
+
+### Findings based on Production Budget
+##### We can see that production budget of a movie is quite essential in determining the amount of earnings a Movie will make. For instance, the movie Avatar had a production budget of 425 million dollars and the worldwide gross earnings from the movie were 2.7 billion dollars. Though this might not be the only factor for these high earnings, it is quite essential that Microsoft sets aside a proper production budget should they venture into production of Movies.
+
+### Findings based on Target Market
+##### When  we compare the bar graphs on the International gross earnings and Domestic earnings, we can deduce that alot of earnings for most of the movies are from International markets. Therefore, in as much as catering to the Domestic audience is essential, Microsoft should create Movies with an International appeal so as to attract foreign audience.
