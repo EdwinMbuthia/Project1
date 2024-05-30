@@ -13,3 +13,9 @@ For Microsoft to better understand the film Industry, they need to answer these 
 - **Analyze Current Box Office trends:** Examine the type of films that are currently succesful at the box office.
 - **Identify Key Film Attributes:** Determine the attributes (e.g., genre, target audience, budget range) of the top-performing films
 - **Provide Actionable Insights:** Offer recommendations on the type of films Microsoft should produce in the analysis.
+
+## Data Understanding and Analysis
+### Data Source
+The data used in this project is from two sources:
+**Data\bom.movie_gross.csv - This is a csv file which mainly contains information on Movie titles, the year the movies were released, the studio that created the Movie and also gross earnings made from movies both domestically and foreign.**
+**Data\tn.movie_budgets.csv - This is also a csv file similar to the one above only that it has additional information on the movie production budget and the worldwide earnings of the Movies**
