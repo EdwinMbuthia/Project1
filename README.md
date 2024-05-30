@@ -44,6 +44,7 @@ correlation
 ### Data Visualization
 **Here I used matplotlib to visualize the data which will make it simpler for us to interpret.**
 
+Data Visualization - Data\bom.movie_gross.csv
 ```python
 plt.figure(figsize=(15,8))
 yearly_domestic_gross.plot(kind='bar', color='skyblue')
@@ -55,3 +56,47 @@ plt.show()
 ![alt text](image.png)
 
 #### From the above bar plot, we can see that the year in which the highest domestic gross income was generated was in 2016 where gross income from the movies was 11,253,653,097 dollars.
+
+Data Visualization - Data\tn.movie_budgets.csv
+```python
+plt.figure(figsize=(15,8))
+plt.bar(top_5_movies['movie'], top_5_movies['International_gross'], color='skyblue')
+plt.xlabel('Movie')
+plt.ylabel('International_gross')
+plt.title('International_gross earnings for Top 5 Movies')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+![alt text](image-1.png)
+
+This barplot shows the International gross earnings of the top_5_movies on the Box office.
+
+```python
+plt.figure(figsize=(15,8))
+plt.bar(top_5_movies['movie'], top_5_movies['production_budget'], color='skyblue')
+plt.xlabel('Movie')
+plt.ylabel('Production Budget')
+plt.title('Production Budget for Top 5 Movies highest earning Movies')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+![alt text](image-3.png)
+
+This barplot shows the production budget spent on the top_5_movies on the Box office.
+
+```python
+plt.figure(figsize=(15,8))
+plt.bar(top_5_movies['movie'], top_5_movies['domestic_gross'], color='skyblue')
+plt.xlabel('Movie')
+plt.ylabel('Domestic Gross')
+plt.title('Domestic Grossfor Top 5 Movies highest earning Movies')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+![alt text](image-2.png)
+
+This barplot shows the domestic earnings from the top_5_movies on the Box office.
+
