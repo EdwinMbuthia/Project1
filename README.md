@@ -40,3 +40,18 @@ correlation
 ```
 
 ***From the correlation analysis, i found that Production budget and Total gross have a correlation of 0.739912 indicating a strong positive correlation. Movies with higher production budgets tend to have higher total gross incomes and vice versa.*** 
+
+### Data Visualization
+**Here I used matplotlib to visualize the data which will make it simpler for us to interpret.**
+
+```python
+plt.figure(figsize=(15,8))
+yearly_domestic_gross.plot(kind='bar', color='skyblue')
+plt.title('A Bar Plot showing the Total Domestic  Gross by Year')
+plt.xlabel('Year')
+plt.ylabel('Total Domestic Gross')
+plt.show()
+```
+![alt text](image.png)
+
+#### From the above bar plot, we can see that the year in which the highest domestic gross income was generated was in 2016 where gross income from the movies was 11,253,653,097 dollars.
