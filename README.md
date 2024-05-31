@@ -31,15 +31,13 @@ df.groupby(["studio", "year"])["domestic_gross"].sum()
 While in Data\tn.movie_budgets.csv file as part of my analysis, I found the gross earnings the found the correlation with production Budget;
 
 ```python
-budgets['Total_gross'] = budgets['domestic_gross'] + budgets['worldwide_gross']
-budgets['Total_gross'].head()
+budgets['International_gross'] = budgets['worldwide_gross']-budgets['domestic_gross'] #Here we've created an international column to represent the earnings from the rest of the world.
 ```
 ```python
-correlation = budgets[['production_budget', 'Total_gross']].corr()
-correlation
+budgets_df = budgets[['movie', 'production_budget', 'domestic_gross', 'International_gross']]
 ```
 
-***From the correlation analysis, i found that Production budget and Total gross have a correlation of 0.739912 indicating a strong positive correlation. Movies with higher production budgets tend to have higher total gross incomes and vice versa.*** 
+***From the correlation analysis, i found that Production budget and Worldwide gross have a correlation of 0.739912 indicating a strong positive correlation. Movies with higher production budgets tend to have higher worldwide gross incomes and vice versa.*** 
 
 ### Data Visualization
 **Here I used matplotlib to visualize the data which will make it simpler for us to interpret.**
